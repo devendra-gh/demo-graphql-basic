@@ -1,0 +1,18 @@
+.main {
+  padding: 20px;
+  background: black;
+}
+
+.button-section {
+  padding: 20px 20px 30px;
+  text-align: center;
+  background: black;
+}
+
+.loadmore {
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: white;
+}
