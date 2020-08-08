@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 const { paginateResults } = require("./utils");
 
 module.exports = {
+  // Resolver for Query
   Query: {
     // without pagination
     // quakes: (_, __, { dataSources }) => dataSources.quakeAPI.getAllQuakes(),
@@ -28,6 +29,8 @@ module.exports = {
 
     users: (_, __, { dataSources }) => dataSources.userAPI.getUsers(),
   },
+
+  // Resolver for Mutation
   Mutation: {
     login: async (_, { email }, { dataSources }) => {
       const user = await dataSources.userAPI.getUser({ email });

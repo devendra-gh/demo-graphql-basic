@@ -1,5 +1,6 @@
 const { gql } = require("apollo-server");
 
+// Type Definition for all Types
 const typeDefs = gql`
   type Query {
     quakes(pageSize: Int, after: String): QuakeConnection!

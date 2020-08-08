@@ -10,6 +10,7 @@ const UserAPI = require("./datasources/user");
 
 const store = createStore();
 
+// Apollo Server Setup
 const server = new ApolloServer({
   context: async ({ req }) => {
     // simple auth check on every request

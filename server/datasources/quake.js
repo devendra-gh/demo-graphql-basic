@@ -1,5 +1,6 @@
 const { RESTDataSource } = require("apollo-datasource-rest");
 
+// Definition for QUAKE API to Getting data
 class QuakeAPI extends RESTDataSource {
   constructor() {
     super();

@@ -1,6 +1,7 @@
 const db = require("./db");
 
 module.exports = {
+  // Getting Paginated API results
   paginateResults: ({
     after: cursor,
     pageSize = 20,
@@ -25,6 +26,7 @@ module.exports = {
       : results.slice(0, pageSize);
   },
 
+  // Static Database for initial
   createStore: () => {
     const users = db.map((user) => {
       return user;

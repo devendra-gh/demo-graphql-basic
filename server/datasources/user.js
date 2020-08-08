@@ -1,5 +1,6 @@
 const { DataSource } = require("apollo-datasource");
 
+// Definition for USER API to getting Data
 class UserAPI extends DataSource {
   constructor({ store }) {
     super();
